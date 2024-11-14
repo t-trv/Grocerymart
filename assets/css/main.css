@@ -1,3 +1,28 @@
+html {
+  --text-color: #1a162e;
+  --icon-color: brightness(0) saturate(100%) invert(8%) sepia(12%) saturate(3016%) hue-rotate(210deg) brightness(103%) contrast(96%);
+  --body-bg-color: #f6f6f6;
+  --header-bg-color: #eee;
+  --top-act-group-bg-color: #fff;
+  --top-act-group-shadow: rgba(237, 237, 246, 0.20);
+  --top-act-group-separate: #ededf6;
+}
+@media (max-width: 991.98px) {
+  html {
+    --header-bg-color: #fff;
+  }
+}
+
+html.dark {
+  --text-color: #fff;
+  --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(289deg) brightness(107%) contrast(101%);
+  --body-bg-color: #292e39;
+  --header-bg-color: #171C28;
+  --top-act-group-bg-color: #292e39;
+  --top-act-group-shadow: rgba(0, 0, 0, 0.2);
+  --top-act-group-separate: #ededf6;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -60,6 +85,7 @@ body {
   font-size: 1.6rem;
   font-family: Gordita, sans-serif;
   color: var(--text-color);
+  background: var(--body-bg-color);
 }
 
 a {
@@ -1192,24 +1218,6 @@ button, input, textarea, select {
     --grid-gutter-y: 90px;
   }
 }
-html {
-  --text-color: #1a162e;
-  --icon-color: brightness(0) saturate(100%) invert(8%) sepia(12%) saturate(3016%) hue-rotate(210deg) brightness(103%) contrast(96%);
-  --header-bg-color: #eee;
-  --top-act-group-bg-color: #fff;
-  --top-act-group-shadow: rgba(237, 237, 246, 0.20);
-  --top-act-group-separate: #ededf6;
-}
-
-html.dark {
-  --text-color: #fff;
-  --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(289deg) brightness(107%) contrast(101%);
-  --header-bg-color: #171C28;
-  --top-act-group-bg-color: #292e39;
-  --top-act-group-shadow: rgba(0, 0, 0, 0.2);
-  --top-act-group-separate: #ededf6;
-}
-
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
   display: flex;
   align-items: center;
@@ -1224,6 +1232,7 @@ html.dark {
 }
 @media (max-width: 575.98px) {
   .top-bar {
+    justify-content: space-between;
     padding: 16px 0;
   }
 }
@@ -1269,6 +1278,11 @@ html.dark {
 .top-act {
   margin-left: auto;
   gap: 20px;
+}
+@media (max-width: 575.98px) {
+  .top-act {
+    margin-left: 0;
+  }
 }
 .top-act__group {
   min-width: 50px;
@@ -1321,7 +1335,12 @@ html.dark {
 @media (max-width: 991.98px) {
   .logo {
     gap: 10px;
-    margin-left: 39px;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  .logo {
+    margin-left: 0;
   }
 }
 .logo__title {
