@@ -8,10 +8,12 @@ html {
   --top-act-group-separate: #ededf6;
   --dropdown-bg-color: #fff;
   --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
+  --top-menu-border-color: #D2D1D6;
 }
 @media (max-width: 991.98px) {
   html {
     --header-bg-color: #fff;
+    --header-shadow-color: rgba(237, 237, 246, 0.20);
   }
 }
 
@@ -26,6 +28,13 @@ html.dark {
   --dropdown-bg-color: #1b202d;
   --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
   --dropdown-arrow-color: brightness(0) saturate(100%) invert(6%) sepia(7%) saturate(5150%) hue-rotate(188deg) brightness(93%) contrast(85%);
+  --top-menu-border-color: #171C28;
+  --menu-column-icon-color: brightness(0) saturate(100%) invert(93%) sepia(9%) saturate(1903%) hue-rotate(187deg) brightness(111%) contrast(96%);
+}
+@media (max-width: 991.98px) {
+  html.dark {
+    --header-shadow-color: rgba(0, 0, 0, 0.20);
+  }
 }
 
 html, body, div, span, applet, object, iframe,
@@ -1231,12 +1240,17 @@ button, input, textarea, select {
 .header {
   background: var(--header-bg-color);
 }
+@media (max-width: 991.98px) {
+  .header {
+    box-shadow: 0px 20px 60px 10px var(--header-shadow-color);
+  }
+}
 
 .top-bar {
   position: relative;
   padding: 30px 0;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .top-bar {
     justify-content: space-between;
     padding: 16px 0;
@@ -1259,7 +1273,7 @@ button, input, textarea, select {
 }
 
 .navbar {
-  margin-left: 144px;
+  margin-left: 139px;
 }
 @media (max-width: 991.98px) {
   .navbar {
@@ -1268,18 +1282,11 @@ button, input, textarea, select {
 }
 @media (max-width: 1199.98px) {
   .navbar {
-    margin-left: 45px;
+    margin-left: 25px;
   }
 }
 .navbar__item:hover .dropdown {
   visibility: visible;
-  animation: dropdownVisibility 0.3s;
-}
-.navbar__item:first-child > a {
-  padding-left: 0;
-}
-.navbar__item:last-child > a {
-  padding-right: 0;
 }
 .navbar__link {
   gap: 6px;
@@ -1294,7 +1301,7 @@ button, input, textarea, select {
   margin-left: auto;
   gap: 20px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .top-act {
     margin-left: 0;
   }
@@ -1353,7 +1360,7 @@ button, input, textarea, select {
     margin-left: 40px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .logo {
     margin-left: 0;
   }
@@ -1378,11 +1385,13 @@ button, input, textarea, select {
   position: absolute;
   left: 0;
   padding-top: 50px;
-  visibility: hidden;
+  width: min(1240px, 100%);
+  visibility: visible;
 }
 .dropdown__inner {
+  --inner-padding: 30px;
   position: relative;
-  padding: 30px;
+  padding: var(--inner-padding);
   border-radius: 20px;
   background: var(--dropdown-bg-color);
   box-shadow: 0px 40px 90px 20px var(--dropdown-bg-color);
@@ -1405,6 +1414,83 @@ button, input, textarea, select {
     visibility: visible;
     opacity: 1;
   }
+}
+.top-menu {
+  --top-menu-main-column: 292px;
+  position: relative;
+}
+.top-menu__main {
+  height: calc(min(582px, 100vh - 158px) - var(--inner-padding) * 2);
+  width: var(--top-menu-main-column);
+  border-right: solid 2px var(--top-menu-border-color);
+  overflow-y: auto;
+}
+
+.menu-column {
+  display: flex;
+  gap: 14px;
+}
+.menu-column + .menu-column {
+  margin-top: var(--inner-padding);
+}
+.menu-column__item:hover .sub-menu {
+  display: grid;
+}
+.menu-column__item:hover > .menu-column__link {
+  color: #0071dc;
+  font-weight: 500;
+}
+.menu-column__icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  position: relative;
+}
+.menu-column__content {
+  flex: 1;
+}
+.menu-column__icon-1 {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.menu-column__icon-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  filter: var(--menu-column-icon-color);
+}
+.menu-column__heading {
+  margin-top: 4px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+.menu-column__list {
+  margin-top: 19px;
+}
+.menu-column__link {
+  display: block;
+  padding: 7px 0;
+  font-size: 1.4rem;
+  line-height: 142.857%;
+}
+.menu-column__link:hover {
+  color: #0071dc;
+  font-weight: 500;
+}
+
+.sub-menu {
+  position: absolute;
+  inset: 0 0 0 var(--top-menu-main-column);
+  padding-left: var(--inner-padding);
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--inner-padding);
+  overflow-y: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
