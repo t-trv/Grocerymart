@@ -1418,10 +1418,11 @@ button, input, textarea, select {
 }
 .top-menu {
   --top-menu-main-column: 292px;
+  --max-inner-height: calc(min(582px, 100vh - 158px) - var(--inner-padding) * 2);
   position: relative;
 }
 .top-menu__main {
-  height: calc(min(582px, 100vh - 158px) - var(--inner-padding) * 2);
+  height: var(--max-inner-height);
   width: var(--top-menu-main-column);
   border-right: solid 2px var(--top-menu-border-color);
   overflow-y: auto;
@@ -1497,6 +1498,14 @@ button, input, textarea, select {
   grid-template-columns: repeat(3, 1fr);
   gap: var(--inner-padding);
   overflow-y: auto;
+}
+.sub-menu--not-main {
+  padding-left: 0;
+  position: initial;
+  inset: initial;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: var(--max-inner-height);
 }
 
 /*# sourceMappingURL=main.css.map */
