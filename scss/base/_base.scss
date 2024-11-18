@@ -24,10 +24,11 @@ button {
     background: transparent;
 }
 
-button, input, textarea, select {
+a, img, button, input, textarea, select {
     font-family: inherit;
     color: inherit;
     padding: 0px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .icon {
