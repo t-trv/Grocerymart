@@ -21,7 +21,12 @@ html.dark {
     --sidebar-bg-color: #292e39;
     --sidebar-shadow:rgba(23, 28, 40, 0.40);
 
-    @include abstracts.breakpoint(lg) {
+    // Category Item
+    --cate-item-bg: #171C28;
+    --cate-item-thumb-bg: #fff;
+    --cate-item-title-color: #fff;
+
+    @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.20);
     }
 }
