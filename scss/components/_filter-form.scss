@@ -37,6 +37,7 @@
 
         @include abstracts.screen(sm) {
             max-height: calc(100vh - 200px);
+            padding-bottom: 60px;
         }
     }
 
@@ -234,6 +235,11 @@
         display: flex;
         justify-content: flex-end;
         margin-top: 32px;
+
+        @include abstracts.screen(sm) {
+            position: sticky;
+            bottom: 0;
+        }
     }
 
     &__heading, &__content, &__footer {
