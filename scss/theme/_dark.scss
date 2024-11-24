@@ -37,7 +37,8 @@ html.dark {
     // Filter form
     --filter-form-bg: #292e39;
     --filter-form-shadow: rgba(0, 0, 0, 0.4);
-    --form-tag-bg: #171c28;
+    --filter-form-tag-bg: #171c28;
+    --filter-form-arrow: brightness(0) saturate(100%) invert(9%) sepia(5%) saturate(5116%) hue-rotate(184deg) brightness(87%) contrast(77%);
 
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.20);
