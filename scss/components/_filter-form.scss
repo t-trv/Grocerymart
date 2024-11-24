@@ -148,6 +148,10 @@
             font-weight: 500;
             line-height: 146.667%;
             background: transparent;
+
+            @include abstracts.screen(sm) {
+                font-size: 1.6rem;
+            }
         }
 
         &-select-wrap {
@@ -224,6 +228,7 @@
 
         @include abstracts.screen(sm) {
             flex-grow: 1;
+            height: 42px;
         }
     }
 

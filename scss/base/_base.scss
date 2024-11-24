@@ -48,6 +48,10 @@ button {
     cursor: pointer;
 }
 
+input, textarea {
+    background: transparent;
+}
+
 a, img, button, input, textarea, select {
     font-family: inherit;
     color: inherit;

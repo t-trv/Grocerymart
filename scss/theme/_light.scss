@@ -37,6 +37,9 @@ html {
     --filter-form-shadow: rgba(200, 200, 200, 0.4);
     --filter-form-tag-bg: #f8f8fb;
 
+    // Footer
+    --footer-bg-color: var(--header-bg-color);
+
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.20);
