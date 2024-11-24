@@ -2127,6 +2127,7 @@ a, img, button, input, textarea, select {
 @media (max-width: 575.98px) {
   .filter__content {
     max-height: calc(100vh - 200px);
+    padding-bottom: 60px;
   }
 }
 .filter.hide {
@@ -2301,8 +2302,15 @@ a, img, button, input, textarea, select {
   justify-content: flex-end;
   margin-top: 32px;
 }
+@media (max-width: 575.98px) {
+  .filter__footer {
+    position: sticky;
+    bottom: 0;
+  }
+}
 .filter__heading, .filter__content, .filter__footer {
-  padding: 0 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .home__container {
