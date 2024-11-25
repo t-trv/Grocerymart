@@ -40,6 +40,9 @@ html {
     // Footer
     --footer-bg-color: var(--header-bg-color);
 
+    // Auth
+    --auth-content-bg: #fff;
+
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.20);

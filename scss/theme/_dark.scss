@@ -43,6 +43,10 @@ html.dark {
     // Footer
     --footer-bg-color: var(--header-bg-color);
 
+    // Auth
+    --auth-intro-text-color: #b9babe;
+    --auth-heading-clor: #b9babe;
+
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.20);
     }

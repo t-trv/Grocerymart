@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,18 +22,68 @@
       <script src="./assets/js/script.js"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header id="header"></header>
-    <script>
-        load('#header', "./templates/header.html");
-    </script>
-    <!-- Main -->
-    <h1>Sign Up</h1>
+    <main class="auth">
+        <!-- Auth Intro -->
+        <div class="auth__intro">
+            <img src="./assets/img/auth/intro.svg" alt="Intro image" class="auth__intro-img">
+            <p class="auth__intro-text">
+                The best of luxury brand values, high quality products, and innovative services
+            </p>
+        </div>
 
-    <!-- Footer -->
-    <footer id="footer"></footer>
-    <script>
-        load('#footer', "./templates/footer.html");
-    </script>
+        <!-- Auth content -->
+        <div class="auth__content">
+            <div class="auth__content-inner">
+                <a href="./" class="logo">
+                    <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img">
+                    <h1 class="logo__title">grocerymart</h1>
+                </a>
+                <h1 class="auth__heading">Sign Up</h1>
+                <p class="auth__desc">Let’s create your account and  Shop like a pro and save money.</p>
+                <form action="" class="form auth__form">
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input type="email" name="" id="" placeholder="Email" class="form__input">
+                            <img src="./assets/icons/message.svg" alt="" class="form__input-icon">
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input type="password" name="" id="" placeholder="Password" class="form__input">
+                            <img src="./assets/icons/lock.svg" alt="" class="form__input-icon">
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input type="password" name="" id="" placeholder="Confirm password" class="form__input">
+                            <img src="./assets/icons/lock.svg" alt="" class="form__input-icon">
+                        </div>
+                    </div>
+
+                    <div class="form__group form__group--inline">
+                        <label class="form__checkbox">
+                            <input type="checkbox" name="" id="" class="form__checkbox-input">
+                            <span class="form__checkbox-label">Set as default card</span>
+                        </label>
+
+                        <a href="#!" class="auth__link form--pull-right">Recovery Password</a>
+                    </div>
+
+                    <div class="form__group auth__btn-group">
+                        <button class="btn btn--primary auth__btn">Sign Up</button>
+                        <button class="btn btn--outline btn--no-margin auth__btn">
+                            <img src="./assets/icons/google.svg" alt="Button Icon" class="btn__icon">
+                            Sign in with mail
+                        </button>
+                    </div>
+                </form>
+
+                <p class="auth__text">
+                    You have an account yet?
+                    <a href="#!" class="auth__link">Sign In</a>
+                </p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
