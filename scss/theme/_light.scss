@@ -50,5 +50,6 @@ html {
 
     @include abstracts.screen(md) {
         --cate-item-bg: #fff;
+        --auth-intro-bg: #fff;
     }
 }
