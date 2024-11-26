@@ -27,6 +27,26 @@
     @include abstracts.screen(lg) {
         padding: 20px 0;
     }
+
+    &__logo {
+        @include abstracts.screen(lg) {
+            gap: 10px;
+            margin-left: 40px;
+
+            &-img {
+                width: 24px;
+            }
+            
+            &-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        @include abstracts.screen(md) {
+            margin-left: 0;
+        }
+    }
+
 }
 
 .navbar {

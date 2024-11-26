@@ -1399,13 +1399,13 @@ a, img, button, input, textarea, select {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(5px);
+    transform: translateX(1px);
   }
   50% {
-    transform: translateX(-5px);
+    transform: translateX(-1px);
   }
   75% {
-    transform: translateX(5px);
+    transform: translateX(1px);
   }
   100% {
     transform: translateX(0);
@@ -1439,6 +1439,23 @@ a, img, button, input, textarea, select {
 @media (max-width: 991.98px) {
   .top-bar {
     padding: 20px 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .top-bar__logo {
+    gap: 10px;
+    margin-left: 40px;
+  }
+  .top-bar__logo-img {
+    width: 24px;
+  }
+  .top-bar__logo-title {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .top-bar__logo {
+    margin-left: 0;
   }
 }
 
@@ -1782,31 +1799,10 @@ a, img, button, input, textarea, select {
   align-items: center;
   gap: 14px;
 }
-@media (max-width: 991.98px) {
-  .logo {
-    gap: 10px;
-    margin-left: 40px;
-  }
-}
-@media (max-width: 767.98px) {
-  .logo {
-    margin-left: 0;
-  }
-}
 .logo__title {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 145.455%;
-}
-@media (max-width: 991.98px) {
-  .logo__title {
-    font-size: 1.8rem;
-  }
-}
-@media (max-width: 991.98px) {
-  .logo__img {
-    width: 24px;
-  }
 }
 
 .dropdown {
@@ -2502,8 +2498,8 @@ a, img, button, input, textarea, select {
   align-items: center;
 }
 .form__group:has(:invalid):has(.form__input:not(:placeholder-shown)) .form__text-input {
-  border-color: red;
-  background: rgba(255, 0, 0, 0.05);
+  border-color: #E57373;
+  background: rgba(229, 115, 115, 0.05);
 }
 .form__group:has(:invalid):has(.form__input:not(:placeholder-shown)) .form__error, .form__group:has(:invalid):has(.form__input:not(:placeholder-shown)) .form__input-icon--error {
   display: block;
@@ -2517,7 +2513,7 @@ a, img, button, input, textarea, select {
   font-weight: 500;
   text-align: center;
   margin-top: 10px;
-  color: red;
+  color: #E57373;
 }
 .form__text-input {
   display: flex;
@@ -2653,6 +2649,11 @@ a, img, button, input, textarea, select {
   font-weight: 500;
   line-height: 144.444%;
   color: var(--auth-intro-text-color);
+}
+@media (max-width: 767.98px) {
+  .auth__intro-text {
+    font-size: 1.5rem;
+  }
 }
 .auth__intro-md-logo {
   position: absolute;

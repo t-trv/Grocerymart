@@ -29,6 +29,10 @@
             line-height: 144.444%;
             color: var(--auth-intro-text-color);
 
+            @include abstracts.screen(md) {
+                font-size: 1.5rem;
+            }
+
         }
 
         &-md-logo {
