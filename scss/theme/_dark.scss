@@ -37,7 +37,7 @@ html.dark {
     // Filter form
     --filter-form-bg: #292e39;
     --filter-form-shadow: rgba(0, 0, 0, 0.4);
-    --filter-form-tag-bg: #171c28;
+    --form-tag-bg: #171c28;
     --filter-form-arrow: brightness(0) saturate(100%) invert(9%) sepia(5%) saturate(5116%) hue-rotate(184deg) brightness(87%) contrast(77%);
 
     // Footer
@@ -48,6 +48,22 @@ html.dark {
     --auth-content-bg: #292e39;
     --auth-intro-text-color: #b9babe;
     --auth-heading-clor: #b9babe;
+
+    // Product page
+    --product-page-bg: #292e39;
+    --product-detail-info-bg: #171c28;
+    --product-detail-tag-bg: #292e39;
+    --product-info-content-bg: #171c28;
+
+    // Breadcrumbs
+    --breadcrumbs-bg: #171c28;
+    --breadcrumbs-shadow: rgba(23, 28, 40, 0.2);
+
+    // Search bar
+    --search-bar-bg: #171c28;
+
+    // Review card
+    --review-card-bg: #171c28;
 
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.20);

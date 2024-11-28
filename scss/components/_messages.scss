@@ -1,0 +1,12 @@
+.message {
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 100%;
+
+    &--success {
+        background: rgb(191 233 207 / 50%);
+    }
+
+}
