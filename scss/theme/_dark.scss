@@ -65,6 +65,9 @@ html.dark {
     // Review card
     --review-card-bg: #171c28;
 
+    // Banner
+    --banner-bg: #171c28;
+
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.20);
     }

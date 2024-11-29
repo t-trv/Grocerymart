@@ -170,7 +170,7 @@
 
             <!-- Product content -->
             <div class="product-container">
-                <div class="prod-tab">
+                <div class="prod-tab js-tabs">
                     <ul class="prod-tab__list">
                         <li class="prod-tab__item prod-tab__item--current">Description</li>
                         <li class="prod-tab__item">Features</li>
@@ -180,7 +180,7 @@
                     <div class="prod-tab__contents">
                         <div class="prod-tab__content prod-tab__content--current">
                             <div class="row">
-                                <div class="col-8">
+                                <div class="col-9 col-md-12">
                                     <div class="text-content">
                                         <h2>Lorem ipsum dolor sit amet.</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis aliquid eos eveniet alias at deleniti consequatur ullam labore cupiditate et provident similique eum, nesciunt sapiente ipsa sed dolore ab dignissimos!</p>
@@ -222,8 +222,55 @@
                                     </div>
                                 </div>
 
-                                <div class="col-4">
-                                    
+                                <div class="col-3 col-md-12 prod__banner">
+                                    <h2 class="prod__banner-title">Discover Lavazza’s social, economic and environmental initiatives.</h2>
+                                    <!-- Banner 1 -->
+                                    <div class="banner">
+                                        <div class="banner__img-wrap">
+                                            <img src="./assets/img/banner/banner-1.png" alt="Banner img" class="banner__img">
+                                        </div>
+
+                                        <div class="banner__content-warp">
+                                            <p class="banner__pre-title">Sustainability</p>
+                                            <h3 class="banner__title">Honduras: Climate-Smart Region</h3>
+
+                                            <div class="banner__cta-wrap">
+                                                <a href="#!" class="banner__cta">Discover More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Banner 2 -->
+                                    <div class="banner">
+                                        <div class="banner__img-wrap">
+                                            <img src="./assets/img/banner/banner-2.png" alt="Banner img" class="banner__img">
+                                        </div>
+
+                                        <div class="banner__content-warp">
+                                            <p class="banner__pre-title">Sustainability</p>
+                                            <h3 class="banner__title">Honduras: Climate-Smart Region</h3>
+
+                                            <div class="banner__cta-wrap">
+                                                <a href="#!" class="banner__cta">Discover More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Banner 3 -->
+                                    <div class="banner">
+                                        <div class="banner__img-wrap">
+                                            <img src="./assets/img/banner/banner-3.png" alt="Banner img" class="banner__img">
+                                        </div>
+
+                                        <div class="banner__content-warp">
+                                            <p class="banner__pre-title">Sustainability</p>
+                                            <h3 class="banner__title">Coffee as a Megaphone of Peace</h3>
+
+                                            <div class="banner__cta-wrap">
+                                                <a href="#!" class="banner__cta">Discover More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +280,7 @@
                         <div class="prod-tab__content">
                             <div class="prod-content">
                                 <h2 class="prod-content__heading">What our customers are saying</h2>
-                                <div class="row row-cols-3">
+                                <div class="row row-cols-3 row-cols-md-1 gy-3">
                                     <div class="col">
                                         <div class="review-card">
                                             <div class="review-card__content">
@@ -249,7 +296,7 @@
                                                 <img src="./assets/icons/star.svg" alt="Star icon" class="review-card__star">
                                                 <img src="./assets/icons/star-half.svg" alt="Star icon" class="review-card__star">
                                                 <img src="./assets/icons/star-blank.svg" alt="Star icon" class="review-card__star">
-                                                <span class="review-card__rating-title">
+                                                <span class="review-card__rating-title d-lg-none">
                                                     (3.5) Review
                                                 </span>
                                             </div>
@@ -261,7 +308,7 @@
                                             <div class="review-card__content">
                                                 <img src="./assets/img/avatar/avatar-2.png" alt="User avatar" class="review-card__avatar"></img>
                                                 <div class="review-card__info">
-                                                    <h4 class="review-card__title">Hoang Phuc Nguyn</h4>
+                                                    <h4 class="review-card__title">Hoang Phuc</h4>
                                                     <p class="review-card__desc">Awsome this is so cheap and delicous!</p>
                                                 </div>
                                             </div>
@@ -271,7 +318,7 @@
                                                 <img src="./assets/icons/star.svg" alt="Star icon" class="review-card__star">
                                                 <img src="./assets/icons/star-half.svg" alt="Star icon" class="review-card__star">
                                                 <img src="./assets/icons/star-blank.svg" alt="Star icon" class="review-card__star">
-                                                <span class="review-card__rating-title">
+                                                <span class="review-card__rating-title d-lg-none">
                                                     (3.5) Review
                                                 </span>
                                             </div>
@@ -293,7 +340,7 @@
                                                 <img src="./assets/icons/star.svg" alt="Star icon" class="review-card__star">
                                                 <img src="./assets/icons/star-half.svg" alt="Star icon" class="review-card__star">
                                                 <img src="./assets/icons/star-blank.svg" alt="Star icon" class="review-card__star">
-                                                <span class="review-card__rating-title">
+                                                <span class="review-card__rating-title d-lg-none">
                                                     (3.5) Review
                                                 </span>
                                             </div>
@@ -306,12 +353,12 @@
                             <div class="prod-content">
                                 <h2 class="prod-content__heading">Similar items you might like</h2>
 
-                                <div class="row row-cols-6 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+                                <div class="row row-cols-4 row-cols-lg-2 row-cols-sm-1 g-3">
                                     <!-- Product Card Item 1 -->
                                     <div class="col">
                                         <article class="product-card">
                                             <div class="product-card__img-wrap">
-                                                <a href="./sign-in.html">
+                                                <a href="./product-detail.html">
                                                     <img src="./assets/img/product/item-1.png" alt="Products Image" class="product-card__thumb">
                                                 </a>
                                                 <button class="like-btn like-btn--liked product-card__like-btn">
@@ -336,7 +383,7 @@
                                     <div class="col">
                                         <article class="product-card">
                                             <div class="product-card__img-wrap">
-                                                <a href="./sign-in.html">
+                                                <a href="./product-detail.html">
                                                     <img src="./assets/img/product/item-2.png" alt="Products Image" class="product-card__thumb">
                                                 </a>
                                                 <button class="like-btn like-btn product-card__like-btn">
@@ -361,7 +408,7 @@
                                     <div class="col">
                                         <article class="product-card">
                                             <div class="product-card__img-wrap">
-                                                <a href="./sign-in.html">
+                                                <a href="./product-detail.html">
                                                     <img src="./assets/img/product/item-3.png" alt="Products Image" class="product-card__thumb">
                                                 </a>
                                                 <button class="like-btn like-btn product-card__like-btn">
@@ -386,7 +433,7 @@
                                     <div class="col">
                                         <article class="product-card">
                                             <div class="product-card__img-wrap">
-                                                <a href="./sign-in.html">
+                                                <a href="./product-detail.html">
                                                     <img src="./assets/img/product/item-4.png" alt="Products Image" class="product-card__thumb">
                                                 </a>
                                                 <button class="like-btn like-btn product-card__like-btn">
@@ -411,7 +458,7 @@
                                     <div class="col">
                                         <article class="product-card">
                                             <div class="product-card__img-wrap">
-                                                <a href="./sign-in.html">
+                                                <a href="./product-detail.html">
                                                     <img src="./assets/img/product/item-5.png" alt="Products Image" class="product-card__thumb">
                                                 </a>
                                                 <button class="like-btn like-btn product-card__like-btn">
@@ -436,7 +483,7 @@
                                     <div class="col">
                                         <article class="product-card">
                                             <div class="product-card__img-wrap">
-                                                <a href="./sign-in.html">
+                                                <a href="./product-detail.html">
                                                     <img src="./assets/img/product/item-6.png" alt="Products Image" class="product-card__thumb">
                                                 </a>
                                                 <button class="like-btn like-btn product-card__like-btn">
@@ -461,7 +508,7 @@
                                     <div class="col">
                                         <article class="product-card">
                                             <div class="product-card__img-wrap">
-                                                <a href="./sign-in.html">
+                                                <a href="./product-detail.html">
                                                     <img src="./assets/img/product/item-7.webp" alt="Products Image" class="product-card__thumb">
                                                 </a>
                                                 <button class="like-btn like-btn product-card__like-btn">
@@ -486,7 +533,7 @@
                                     <div class="col">
                                         <article class="product-card">
                                             <div class="product-card__img-wrap">
-                                                <a href="./sign-in.html">
+                                                <a href="./product-detail.html">
                                                     <img src="./assets/img/product/item-8.png" alt="Products Image" class="product-card__thumb">
                                                 </a>
                                                 <button class="like-btn like-btn product-card__like-btn">
