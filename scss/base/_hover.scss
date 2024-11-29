@@ -1,0 +1,28 @@
+.hover-layup {
+    transition: translate;
+    transition-duration: 0.3s;
+    display: flex;
+
+    &:hover {
+        translate: 0 -10px;
+    }
+}
+
+.hover-text-decor {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        display: block;
+        width: 0%;
+        height: 2px;
+        background: #0071dc;
+        transition: width .3s;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
