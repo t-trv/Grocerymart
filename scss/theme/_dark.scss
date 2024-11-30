@@ -74,6 +74,20 @@ html.dark {
     // Banner
     --banner-bg: #171c28;
 
+    // Checkout 
+    --checkout-cart-info-bg: #171c28;
+    --checkout-breadcrumbs-bg: #171c28;
+    --checkout-cart-info-shadow: rgba(23, 28, 40, 0.2);
+    --checkout-gift-shadow: rgba(23, 28, 40, 0.2);
+
+    // Dialog
+    --dialog-bg: #2f3441;
+    --dialog-shadow: rgba(23, 28, 40, 0.4);
+
+
+
+
+
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.20);
     }

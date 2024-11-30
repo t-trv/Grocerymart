@@ -8,6 +8,16 @@
     }
 }
 
+.hover-layup--lite {
+    transition: translate;
+    transition-duration: 0.3s;
+    display: flex;
+
+    &:hover {
+        translate: 0 -5px;
+    }
+}
+
 .hover-text-decor {
     position: relative;
 
