@@ -35,6 +35,21 @@
         margin-top: 30px;
     }
 
+    &__heading {
+        display: flex;
+        align-items: center;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 141.667%;
+    }
+
+    &__sub-heading {
+        margin: 30px 0;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+
     &__list {
         margin-top: -30px;
     }
@@ -92,12 +107,159 @@
     }
 
     &__btn {
-        width: 100%;
+    width: 100%;
         margin-top: 30px;
     }
 
     &__bottom {
         margin-top: 30px;
+    }
+}
+
+.user-address {
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+
+        @include abstracts.screen(md) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+
+    &__desc {
+        margin-top: 4px;
+        font-size: 1.6rem;
+        line-height: 146.667%;
+    }
+
+    &__message {
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+
+    &__link {
+        color: #0071dc;
+        margin-left: 8px;
+    }
+
+    &__btn {
+        @include abstracts.screen(md) {
+            height: 40px;
+            font-size: 1.4rem;
+
+            & > img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+.address-card {
+    display: flex;
+    margin-top: 30px;
+    gap: 16px;
+
+    @include abstracts.screen(md) {
+        flex-direction: column;
+    }
+
+    &__left {
+        flex: 1;
+        display: flex;
+        gap: 16px;
+    }
+
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+
+    &__desc {
+        width: min(520px, 90%);
+        margin-top: 4px;
+        font-size: 1.5rem;
+        line-height: 146.667%;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+        list-style: disc inside;
+        font-size: 1.4rem;
+        line-height: 142.857%;
+
+        @include abstracts.screen(md) {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &-item {
+            margin-left: 8px;
+        }
+    }
+
+    &__ctrl {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__edit-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.8rem;
+        line-height: 144.444%;
+
+        @include abstracts.screen(md) {
+            margin-left: auto;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__edit-icon {
+        width: 20px;
+        height: 20px;
+
+        @include abstracts.screen(md) {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &__checkbox {
+        position: relative;
+
+        &-input {
+            appearance: none;
+
+            &::before {
+                content: url(../icons/checkbox-uncheck.svg);
+            }
+
+            &:not(:checked)::before {
+                filter: var(--icon-color);
+            }
+
+            &:checked::before {
+                content: url(../icons/checkbox-checked.svg);
+            }
+        }
     }
 }
 

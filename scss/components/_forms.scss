@@ -10,6 +10,7 @@ $error-color: #E57373;
     
     &__group {
         margin-top: 30px;
+        width: 100%;
 
         &--inline {
             display: flex;
@@ -36,6 +37,26 @@ $error-color: #E57373;
         }
     }
 
+    &__row {
+        display: flex;
+        align-items: flex-end;
+        gap: 30px;
+
+        > * {
+            flex: 1;
+        }
+
+        @include abstracts.screen(md) {
+            gap: 20px;
+        }
+
+        @include abstracts.screen(sm) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+        }
+    }
+
     &__error {
         display: none;
         font-size: 1.6rem;
@@ -45,12 +66,10 @@ $error-color: #E57373;
         color: $error-color;
     }
 
-    &__text-input {
+    &__text-area, &__text-input  {
+        width: 100%;
         display: flex;
         align-items: center;
-
-        height: 50px;
-        padding: 12px 8px;
 
         border-radius: 10px;
         border: 1.6px solid #d2d1d6;
@@ -58,22 +77,43 @@ $error-color: #E57373;
         &:focus-within {
             border-color: #77dae6;
         }
+    }
+
+    &__text-area {
+        height: 100px;
+        padding: 12px;
+
+        &-input {
+            resize: none;
+        }
+    }
+
+    &__text-input {
+        height: 50px;
+        padding: 12px 8px;
 
         @include abstracts.screen(md) {
             height: 48px;
         }
     }
 
-    &__input {
+    &__text-area-input, &__input {
         flex-grow: 1;
         height: 100%;
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 144.444%;
 
+        &::placeholder {
+            color: #d2d1d6;
+        }
+
         @include abstracts.screen(md) {
             font-size: 1.6rem;
         }
+    } 
+
+    &__input {
 
         &-icon {
             padding-left: 12px;
@@ -83,10 +123,6 @@ $error-color: #E57373;
                 margin-left: 12px;
                 animation: horizontal-shaking 0.2s;
             }
-        }
-
-        &::placeholder {
-            color: #d2d1d6;
         }
     }
 
@@ -148,9 +184,13 @@ $error-color: #E57373;
 
     &__label {
         display: block;
-        font-size: 2.2rem;
+        font-size: 2rem;
         font-weight: 500;
         line-height: 145.455%;
+
+        @include abstracts.screen(sm) {
+            font-size: 1.6rem;
+        }
 
         &--small {
             margin-bottom: 10px;
