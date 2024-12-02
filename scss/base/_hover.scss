@@ -20,6 +20,7 @@
 
 .hover-text-decor {
     position: relative;
+    transition: color .3s;
 
     &::before {
         content: "";
@@ -35,5 +36,9 @@
 
     &:hover::before {
         width: 100%;
+    }
+
+    &:hover {
+        color: #0071dc;
     }
 }

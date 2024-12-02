@@ -362,7 +362,7 @@
                                 <span>$201.65</span>
                             </div>
 
-                            <button class="btn btn--primary btn--rounded cart-info__btn">Continue to checkout</button>
+                            <a href="./payment.html" class="btn btn--primary btn--rounded cart-info__btn">Continue to checkout</a>
                         </div>
 
                         <div class="cart-info hover-layup">
@@ -447,8 +447,84 @@
                     <div class="form__group">
                         <label for="city" class="form__label">City/District/Town</label>
                         <div class="form__text-input">
-                            <input type="text" name="" id="city" placeholder="City/District/Town" class="form__input">
+                            <input type="text" name="" id="city" placeholder="City/District/Town" class="form__input js-toggle" toggle-target="#dialog-city">
                             <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon--error">
+
+                            <div id="dialog-city" class="form__select-dialog hide">
+                                <div class="form__search">
+                                    <input type="text" name="search" id="search" placeholder="Search" class="form__search-input">
+                                    <img src="./assets/icons/search.svg" alt="Seach icon" class="form__search-icon">
+                                </div>
+
+                                <ul class="form__options-list">
+                                    <li class="form__option">Ba Ria</li>
+                                    <li class="form__option">Bac Lieu</li>
+                                    <li class="form__option form__option--current">Bao Loc</li>
+                                    <li class="form__option">Bac Giang</li>
+                                    <li class="form__option">Bac Kan</li>
+                                    <li class="form__option">Bac Ninh</li>
+                                    <li class="form__option">Ben Tre</li>
+                                    <li class="form__option">Bien Hoa</li>
+                                    <li class="form__option">Buon Ma Thuot</li>
+                                    <li class="form__option">Cam Ranh</li>
+                                    <li class="form__option">Cao Bang</li>
+                                    <li class="form__option">Cao Lanh</li>
+                                    <li class="form__option">Ca Mau</li>
+                                    <li class="form__option">Cam Pha</li>
+                                    <li class="form__option">Chau Doc</li>
+                                    <li class="form__option">Chi Linh</li>
+                                    <li class="form__option">Di An</li>
+                                    <li class="form__option">Da Lat</li>
+                                    <li class="form__option">Dien Bien Phu</li>
+                                    <li class="form__option">Dong Ha</li>
+                                    <li class="form__option">Dong Hoi</li>
+                                    <li class="form__option">Dong Xoai</li>
+                                    <li class="form__option">Gia Nghia</li>
+                                    <li class="form__option">Hai Duong</li>
+                                    <li class="form__option">Ha Giang</li>
+                                    <li class="form__option">Ha Tien</li>
+                                    <li class="form__option">Ha Tinh</li>
+                                    <li class="form__option">Ha Long</li>
+                                    <li class="form__option">Hoa Binh</li>
+                                    <li class="form__option">Hoi An</li>
+                                    <li class="form__option">Hong Ngu</li>
+                                    <li class="form__option">Hue</li>
+                                    <li class="form__option">Hung Yen</li>
+                                    <li class="form__option">Kon Tum</li>
+                                    <li class="form__option">Lai Chau</li>
+                                    <li class="form__option">Lao Cai</li>
+                                    <li class="form__option">Lang Son</li>
+                                    <li class="form__option">Long Khanh</li>
+                                    <li class="form__option">Long Xuyen</li>
+                                    <li class="form__option">Mong Cai</li>
+                                    <li class="form__option">My Tho</li>
+                                    <li class="form__option">Nam Dinh</li>
+                                    <li class="form__option">Nga Bay</li>
+                                    <li class="form__option">Nha Trang</li>
+                                    <li class="form__option">Ninh Binh</li>
+                                    <li class="form__option">Phan Rang - Thap Cham</li>
+                                    <li class="form__option">Phan Thiet</li>
+                                    <li class="form__option">Phu Ly</li>
+                                    <li class="form__option">Phuc Yen</li>
+                                    <li class="form__option">Pleiku</li>
+                                    <li class="form__option">Quang Ngai</li>
+                                    <li class="form__option">Quy Nhon</li>
+                                    <li class="form__option">Sam Son</li>
+                                    <li class="form__option">Soc Trang</li>
+                                    <li class="form__option">Son La</li>
+                                    <li class="form__option">Thai Binh</li>
+                                    <li class="form__option">Thai Nguyen</li>
+                                    <li class="form__option">Thanh Hoa</li>
+                                    <li class="form__option">Thu Dau Mot</li>
+                                    <li class="form__option">Thu Duc</li>
+                                    <li class="form__option">Tuy Hoa</li>
+                                    <li class="form__option">Uong Bi</li>
+                                    <li class="form__option">Vinh</li>
+                                    <li class="form__option">Vinh Yen</li>
+                                    <li class="form__option">Vung Tau</li>
+                                    <li class="form__option">Yen Bai</li>
+                                </ul>
+                            </div>
                         </div>
                         <p class="form__error"></p>
                     </div>
@@ -459,11 +535,11 @@
                             <span class="form__checkbox-label">Set as default address</span>
                         </label>
                     </div>
+                    <div class="modal__bottom">
+                        <button class="btn btn--text modal__btn hover-layup--lite js-toggle" toggle-target="#add-new-address">Cancel</button>
+                        <button class="btn btn--primary modal__btn hover-layup--lite js-toggle form__submit-btn" toggle-target="#add-new-address">Confirm</button>
+                    </div>
                 </form>
-            </div>
-            <div class="modal__bottom">
-                <button class="btn btn--text modal__btn hover-layup--lite js-toggle" toggle-target="#add-new-address">Cancel</button>
-                <button class="btn btn--primary modal__btn hover-layup--lite js-toggle" toggle-target="#add-new-address">Confirm</button>
             </div>
         </div>
 

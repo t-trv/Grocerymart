@@ -6,6 +6,8 @@
 }
 
 .header {
+    position: relative;
+    z-index: 2;
     background: var(--header-bg-color);
     
     @include abstracts.screen(lg) {
@@ -43,7 +45,7 @@
         }
 
         @include abstracts.screen(md) {
-            margin-right: 0;
+            margin-left: 0;
 
             &-title {
                 font-size: 1.8rem !important;
@@ -65,7 +67,7 @@
         background-color: var(--sidebar-bg-color);
         inset: 0 50% 0 0;
         margin-left: 0;
-        z-index: 9;
+        z-index: 10;
         padding: 20px 0;
         translate: -100%;
         transition: translate .3s;

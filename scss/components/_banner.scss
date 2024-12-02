@@ -65,6 +65,7 @@
 
     &__cta {
         font-weight: 500;
+        padding: 4px 0;
 
         &-icon {
             width: 20px;
@@ -74,10 +75,5 @@
         @include abstracts.screen(lg) {
             font-size: 1.4rem;
         }
-    }
-
-    &__cta:hover {
-        text-decoration: underline;
-        color: #0071dc
     }
 }
