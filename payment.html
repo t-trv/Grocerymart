@@ -57,8 +57,14 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">
+                        <a href="./shipping.html" class="breadcrumbs__link">
                             Shipping
+                            <img src="./assets/icons/arrow-right.svg" alt="Arrow right"> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">
+                            Payment Method
                         </a>
                     </li>
                 </ul>
@@ -69,23 +75,140 @@
                 <div class="row gy-3">
 
                     <!-- CỘT 1 -->
-                    <div class="col-8 col-xl-12">
+                    <div class="col-8 col-xl-8 col-lg-12">
                         <div class="cart-info">
-                            <h2 class="cart-info__sub-heading">1. Shipping, arrives between Mon, May 16—Tue, May 24</h2>
+                            <div class="cart-info__top">
+                                <h2 class="cart-info__heading cart-info__heading--lv2">1. Shipping, arrives between Mon, May 16—Tue, May 24</h2>
+                                <a href="./shipping.html" class="cart-info__edit-btn hover-layup--lite">
+                                    <img src="./assets/icons/edit.svg" alt="Edit icon" class="cart-info__edit-icon icon">
+                                    Edit
+                                </a>
+                            </div>
+
+
+                            <!-- PAYMENT ITEM 1 -->
+                            <article class="payment-item">
+                                <div class="payment-item__content">
+                                    <h3 class="payment-item__title">Imran Khan</h3>
+                                    <p class="payment-item__desc">Museum of Rajas, Sylhet Sadar, Sylhet 3100.</p>
+                                </div>
+                            </article>
+
+                            <!-- PAYMENT ITEM 2 -->
+                            <article class="payment-item">
+                                <div class="payment-item__content">
+                                    <h3 class="payment-item__title">Items details</h3>
+                                    <p class="payment-item__desc">2 items</p>
+                                </div>
+                                <a href="./shipping.html" class="payment-item__detail hover-text-decor">View details</a>
+                            </article>
                         </div>
 
                         <div class="cart-info">
-                            <h2 class="cart-info__sub-heading">2. Shipping method</h2>
+                            <div class="cart-info__top">
+                                <h2 class="cart-info__heading cart-info__heading--lv2">2. Shipping method</h2>
+                            </div>
+
                             <div class="cart-info__separate"></div>
+
+                            <h3 class="cart-info__sub-heading">Availeble Shipping method</h3>
+                            
+                            <!-- PAYMENT ITEM 1 -->
+                            <article class="payment-item payment-item--pointer">
+                                <img src="./assets/img/payment/delivery-1.png" alt="Payment method image" class="payment-item__thumb">
+                                <div class="payment-item__content">
+                                    <div class="payment-item__info">
+                                        <h3 class="payment-item__title">Fedex Delivery</h3>
+                                        <p class="payment-item__desc payment-item__desc--low">Delivery: 2-3 days work</p>
+                                    </div>
+                                    
+                                    <div class="payment-item__cost-wrap">
+                                        <div class="address-card__chose">
+                                            <label class="cart-info__checkbox payment-item__checkbox">
+                                                <input type="radio" name="shipping__method" class="cart-info__checkbox-input payment-item__checkbox-input" checked>
+                                                <span class="payment-item__cost">Free</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- PAYMENT ITEM 2 -->
+                            <article class="payment-item payment-item--pointer">
+                                <img src="./assets/img/payment/delivery-2.png" alt="Payment method image" class="payment-item__thumb">
+                                <div class="payment-item__content">
+                                    <div class="payment-item__info">
+                                        <h3 class="payment-item__title">Fedex Delivery</h3>
+                                        <p class="payment-item__desc payment-item__desc--low">Delivery: 2-3 days work</p>
+                                    </div>
+                                    
+                                    <div class="payment-item__cost-wrap">
+                                        <div class="address-card__chose">
+                                            <label class="cart-info__checkbox payment-item__checkbox">
+                                                <input type="radio" name="shipping__method" class="cart-info__checkbox-input payment-item__checkbox-input">
+                                                <span class="payment-item__cost">$12.00</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
                     </div>
 
                     <!-- CỘT 2 -->
-                    <div class="col-4 col-xl-12">
+                    <div class="col-4 col-xl-4 col-lg-12">
                         <div class="cart-info">
-                            <h2 class="cart-info__sub-heading">Payment Details</h2>
-                            <div class="cart-info__separate"></div>
+                            <h2 class="cart-info__heading cart-info__heading--lv2">Payment Details</h2>
+                            <p class="cart-info__desc">
+                                Complete your purchase item by providing your payment details order.
+                            </p>
 
+                            <form action="" class="form cart-info__form">
+                                <div class="form__group">
+                                    <label for="email" class="form__label form__label--medium">Email</label>
+                                    <div class="form__text-input">
+                                        <input type="email" name="email" id="email" placeholder="Email" value="" class="form__input" required>
+                                        <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon--error">
+                                    </div>
+                                    <p class="form__error">Email is not valid!</p>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="card-holder" class="form__label form__label--medium">Card holder</label>
+                                    <div class="form__text-input">
+                                        <input type="text" name="card-holder" id="card-holder" placeholder="Card holder" value="" class="form__input" required>
+                                        <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon--error">
+                                    </div>
+                                    <p class="form__error">Email is not valid!</p>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="card-details" class="form__label form__label--medium">Card details</label>
+                                    <div class="form__text-input">
+                                        <input type="text" name="card-details" id="card-details" placeholder="Card details" value="" class="form__input" required>
+                                        <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon--error">
+                                    </div>
+                                    <p class="form__error">Email is not valid!</p>
+                                </div>
+
+                                <div class="form__row cart-info__form-row">
+                                    <div class="form__group">
+                                        <div class="form__text-input">
+                                            <input type="text" name="card-expired" id="card-expired" placeholder="MM/YY" value="" class="form__input" required>
+                                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon--error">
+                                        </div>
+                                        <p class="form__error">Email is not valid!</p>
+                                    </div>
+                                    <div class="form__group">
+                                        <div class="form__text-input">
+                                            <input type="text" name="card-cvc" id="card-cvc" placeholder="CVC" value="" class="form__input" required>
+                                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon--error">
+                                        </div>
+                                        <p class="form__error">Email is not valid!</p>
+                                    </div>
+                                </div>
+                            </form>
+                            
                             <div class="cart-info__row">
                                 <span>Subtotal (items)</span>
                                 <span>3</span>
@@ -105,8 +228,8 @@
                                 <span>Estimated Total</span>
                                 <span>$201.65</span>
                             </div>
-
-                            <button class="btn btn--primary btn--rounded cart-info__btn">Continue to checkout</button>
+                            
+                            <button class="btn btn--primary btn--rounded cart-info__btn">Pay $201.65</button>
                         </div>
 
                         <div class="cart-info hover-layup">

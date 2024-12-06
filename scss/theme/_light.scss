@@ -83,7 +83,10 @@ html {
     --form-select-dialog-shadow: rgba($color: #000000, $alpha: 0.15);
     --form-option-hover-bg: #ebebeb;
 
+    // Payment item 
+    --checkout-payment-item-bg: #f6f6f6;
 
+    
 
 
     @include abstracts.screen(lg) {

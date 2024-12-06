@@ -188,8 +188,10 @@ $error-color: #E57373;
     } 
 
     &__input {
+        width: 100%;
 
         &-icon {
+            width: 3.6rem;
             padding-left: 12px;
 
             &--error {
@@ -261,17 +263,24 @@ $error-color: #E57373;
         font-size: 2rem;
         font-weight: 500;
         line-height: 145.455%;
+        
+        &--small {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            line-height: 142.857%;
+        }
+        
+        &--medium {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%;
+        }
 
         @include abstracts.screen(sm) {
             font-size: 1.6rem;
         }
 
-        &--small {
-            margin-bottom: 10px;
-            font-size: 1.4rem;
-            line-height: 142.857%;
-
-        }
     }
 
     &__select {
