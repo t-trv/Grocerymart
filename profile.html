@@ -28,10 +28,10 @@
         load('#header', "./templates/header-logined.html");
     </script>
     
-    <main class="checkout-page">
+    <main class="profile">
         <div class="container">
             <!-- Search bar -->
-            <div class="checkout-container">
+            <div class="profile-container">
                 <div class="search-bar d-none d-md-flex">
                     <input type="text" name="" id="" placeholder="Search for item" class="search-bar__input">
                     <button class="search-bar__submit">
@@ -40,256 +40,290 @@
                 </div>
             </div>
 
+            <!-- Profile content -->
+             <div class="profile-container">
+                <div class="row gy-md-3">
+                    <div class="col-3 col-xl-4 col-lg-5 col-md-12">
+                        <aside class="profile__sidebar">
 
-            <!-- Breadcrumbs -->
-            <div class="checkout-container">
-                <ul class="breadcrumbs checkout-page__breadcrumbs">
-                    <li>
-                        <a href="./index-logined.html" class="breadcrumbs__link">Home
-                            <img src="./assets/icons/arrow-right.svg" alt="Arrow right"> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">Checkout
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Checkout content -->
-            <div class="checkout-container">
-                <div class="row gy-3">
-
-                    <!-- CỘT 1 -->
-                    <div class="col-8 col-xl-12">
-                        <div class="cart-info">
-                            <div class="cart-info__list">
-
-                                <!-- Cart item 1 -->
-                                <article class="cart-item">
-                                    <a href="./product-detail.html">
-                                        <img src="./assets/img/product/item-1.png" alt="Product image" class="cart-item__thumb">
-                                    </a>
-
-                                    <div class="cart-item__content">
-                                        <div class="cart-item__content-left">
-                                            <h3 class="cart-item__title">
-                                                <a href="./product-detail.html">Coffee Beans - Espresso Arabica and Robusta Beans</a>
-                                            </h3>
-
-                                            <p class="cart-item__price-wrap">
-                                                $47.00 | <span class="cart-item__status">In Stock</span>
-                                            </p>
-
-                                            <div class="cart-item__ctrl">
-                                                <div class="cart-item__input">
-                                                    Lavazaa
-                                                    <img src="./assets/icons/arrow-down-2.svg" alt="Arrow icon" class="icon">
-                                                </div>
-                                                <div class="cart-item__input">
-                                                    <div class="cart-item__input-btn">
-                                                        <img src="./assets/icons/minus.svg" alt="Arrow icon" class="icon">
-                                                    </div>
-                                                    <span>1</span>
-                                                    <div class="cart-item__input-btn">
-                                                        <img src="./assets/icons/plus.svg" alt="Arrow icon" class="icon">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cart-item__content-right">
-                                            <p class="cart-item__total-price">$47.00</p>
-
-                                            <div class="cart-item__ctrl">
-                                                <button class="cart-item__ctrl-btn">
-                                                    <img src="./assets/icons/heart-2.svg" alt="Heart icon">
-                                                    Save
-                                                </button>
-                                                <button class="cart-item__ctrl-btn js-toggle" toggle-target="#delete-confirm">
-                                                    <img src="./assets/icons/trash.svg" alt="Trash icon">
-                                                    Delete  
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <!-- Cart item 2 -->
-                                <article class="cart-item">
-                                    <a href="./product-detail.html">
-                                        <img src="./assets/img/product/item-2.png" alt="Product image" class="cart-item__thumb">
-                                    </a>
-
-                                    <div class="cart-item__content">
-                                        <div class="cart-item__content-left">
-                                            <h3 class="cart-item__title">
-                                                <a href="./product-detail.html">Lavazza Coffee Blends - Try the Italian Espresso</a>
-                                            </h3>
-
-                                            <p class="cart-item__price-wrap">
-                                                $53.00 | <span class="cart-item__status">In Stock</span>
-                                            </p>
-
-                                            <div class="cart-item__ctrl">
-                                                <div class="cart-item__input">
-                                                    Lavazaa
-                                                    <img src="./assets/icons/arrow-down-2.svg" alt="Arrow icon" class="icon">
-                                                </div>
-                                                <div class="cart-item__input">
-                                                    <div class="cart-item__input-btn">
-                                                        <img src="./assets/icons/minus.svg" alt="Arrow icon" class="icon">
-                                                    </div>
-                                                    <span>2</span>
-                                                    <div class="cart-item__input-btn">
-                                                        <img src="./assets/icons/plus.svg" alt="Arrow icon" class="icon">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cart-item__content-right">
-                                            <p class="cart-item__total-price">$106.00</p>
-
-                                            <div class="cart-item__ctrl">
-                                                <button class="cart-item__ctrl-btn">
-                                                    <img src="./assets/icons/heart-2.svg" alt="Heart icon">
-                                                    Save
-                                                </button>
-                                                <button class="cart-item__ctrl-btn js-toggle" toggle-target="#delete-confirm">
-                                                    <img src="./assets/icons/trash.svg" alt="Trash icon">
-                                                    Delete  
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <!-- Cart item 3 -->
-                                <article class="cart-item">
-                                    <a href="./product-detail.html">
-                                        <img src="./assets/img/product/item-3.png" alt="Product image" class="cart-item__thumb">
-                                    </a>
-
-                                    <div class="cart-item__content">
-                                        <div class="cart-item__content-left">
-                                            <h3 class="cart-item__title">
-                                                <a href="./product-detail.html">Qualità Oro Mountain Grown - Espresso Coffee Beans</a>
-                                            </h3>
-
-                                            <p class="cart-item__price-wrap">
-                                                $38.65 | <span class="cart-item__status">In Stock</span>
-                                            </p>
-
-                                            <div class="cart-item__ctrl">
-                                                <div class="cart-item__input">
-                                                    Lavazaa
-                                                    <img src="./assets/icons/arrow-down-2.svg" alt="Arrow icon" class="icon">
-                                                </div>
-                                                <div class="cart-item__input">
-                                                    <div class="cart-item__input-btn">
-                                                        <img src="./assets/icons/minus.svg" alt="Arrow icon" class="icon">
-                                                    </div>
-                                                    <span>1</span>
-                                                    <div class="cart-item__input-btn">
-                                                        <img src="./assets/icons/plus.svg" alt="Arrow icon" class="icon">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cart-item__content-right">
-                                            <p class="cart-item__total-price">$38.65</p>
-
-                                            <div class="cart-item__ctrl">
-                                                <button class="cart-item__ctrl-btn">
-                                                    <img src="./assets/icons/heart-2.svg" alt="Heart icon">
-                                                    Save
-                                                </button>
-                                                <button class="cart-item__ctrl-btn js-toggle" toggle-target="#delete-confirm">
-                                                    <img src="./assets/icons/trash.svg" alt="Trash icon">
-                                                    Delete  
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
+                            <!-- User -->
+                            <div class="profile-user">
+                                <div class="profile-user__avatar-wrap">
+                                    <img src="./assets/img/avatar/pnhi-121.jpg" alt="" class="profile-user__avatar">
+                                </div>
+                                <h1 class="profile-user__name">Phuong Nhi</h1>
+                                <p class="profile-user__desc">Registered in 24th May</p>
                             </div>
+                            <!-- End User -->
 
-                            <div class="cart-info__bottom">
-                                <div class="row">
-                                    <div class="col-8 col-md-6">
-                                        <div class="cart-info__back">
-                                            <a href="./index-logined.html" class="cart-info__back-link">
-                                                <img src="./assets/icons/arrow-down-2.svg" alt="Arrow icon" class="cart-info__back-icon icon">
-                                                Continue shopping
+
+                            <!-- Menu -->
+                             <div class="profile-menu">
+                                <h3 class="profile-menu__title">Manage Account</h3>
+                                <ul class="profile-menu__list">
+                                    <li>
+                                        <a href="./personal-info.html" class="profile-menu__link hover-layup--lite">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/profile.svg" alt="Menu icon" class="icon">
+                                            </span>
+                                            Personal info
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile-menu__link hover-layup--lite">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/location.svg" alt="Menu icon" class="icon">
+                                            </span>
+                                            Addresses
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile-menu__link hover-layup--lite">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/message-2.svg" alt="Menu icon" class="icon">
+                                            </span>
+                                            Communications & privacy
+                                        </a>
+                                    </li>
+                                </ul>
+                             </div>
+                            <!-- End Menu -->
+
+                            <!-- Menu -->
+                            <div class="profile-menu">
+                                <h3 class="profile-menu__title">My items</h3>
+                                <ul class="profile-menu__list">
+                                    <li>
+                                        <a href="#!" class="profile-menu__link hover-layup--lite">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/download.svg" alt="Menu icon" class="icon">
+                                            </span>
+                                            Reorder
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile-menu__link hover-layup--lite">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/heart.svg" alt="Menu icon" class="icon">
+                                            </span>
+                                            Lists
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile-menu__link hover-layup--lite">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/gift-2.svg" alt="Menu icon" class="icon">
+                                            </span>
+                                            Registries
+                                        </a>
+                                    </li>
+                                </ul>
+                             </div>
+                            <!-- End Menu -->
+
+                            <!-- Menu -->
+                            <div class="profile-menu">
+                                <h3 class="profile-menu__title">Subscriptions & plans</h3>
+                                <ul class="profile-menu__list">
+                                    <li>
+                                        <a href="#!" class="profile-menu__link hover-layup--lite">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/shield.svg" alt="Menu icon" class="icon">
+                                            </span>
+                                            Protection plans
+                                        </a>
+                                    </li>
+                                </ul>
+                             </div>
+                            <!-- End Menu -->
+
+                            <!-- Menu -->
+                            <div class="profile-menu">
+                                <h3 class="profile-menu__title">Customer Service</h3>
+                                <ul class="profile-menu__list">
+                                    <li>
+                                        <a href="#!" class="profile-menu__link hover-layup--lite">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/info.svg" alt="Menu icon" class="icon">
+                                            </span>
+                                            Help
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile-menu__link hover-layup--lite">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/danger.svg" alt="Menu icon" class="icon">
+                                            </span>
+                                            Terms of Use
+                                        </a>
+                                    </li>
+                                </ul>
+                             </div>
+                            <!-- End Menu -->
+
+                        </aside>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="col-9 col-xl-8 col-lg-7 col-md-12">
+                        <div class="cart-info">
+                            <div class="row gy-3">
+                                <div class="col-12">
+                                    <h2 class="cart-info__heading">My Wallet</h2>
+                                    <p class="cart-info__desc profile__desc">Payment method</p>
+
+                                    <div class="row row-cols-3 row-cols-xl-2 row-cols-lg-1 gy-md-2">
+                                        <!-- PAYMENT CARD 1 -->
+                                        <div class="col-4" style="--bg-color: #1e2e69">
+                                            <article class="payment-card">
+                                                <img src="./assets/img/card/plane-bg.svg" alt="Payment card image" class="payment-card__img">
+                                                <div class="payment-card__top">
+                                                    <img src="./assets/img/card/plane.svg" alt="Payment card icon" class="payment-card__icon">
+                                                    <span class="payment-card__type">FeatherCard</span>
+                                                </div>
+                                                <div class="payment-card__num">2224 0605 0507 2024</div>
+                                                <div class="payment-card__bottom">
+                                                    <div>
+                                                        <p class="payment-card__label">Card Holder</p>
+                                                        <p class="payment-card__value">Phuong Nhi</p>
+                                                    </div>
+                                                    <div class="payment-card__expired">
+                                                        <p class="payment-card__label">Expired</p>
+                                                        <p class="payment-card__value">10/26</p>
+                                                    </div>
+                                                    <div class="payment-card__circle"></div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <!-- END PAYMENT CARD 1 -->
+
+                                        <!-- PAYMENT CARD 2 -->
+                                        <div class="col-4" style="--bg-color: #354151">
+                                            <article class="payment-card">
+                                                <img src="./assets/img/card/leaf-bg.svg" alt="Payment card image" class="payment-card__img">
+                                                <div class="payment-card__top">
+                                                    <img src="./assets/img/card/leaf.svg" alt="Payment card icon" class="payment-card__icon">
+                                                    <span class="payment-card__type">FeatherCard</span>
+                                                </div>
+                                                <div class="payment-card__num">1234 4567 8901 2221</div>
+                                                <div class="payment-card__bottom">
+                                                    <div>
+                                                        <p class="payment-card__label">Card Holder</p>
+                                                        <p class="payment-card__value">Phuong Nhi</p>
+                                                    </div>
+                                                    <div class="payment-card__expired">
+                                                        <p class="payment-card__label">Expired</p>
+                                                        <p class="payment-card__value">10/26</p>
+                                                    </div>
+                                                    <div class="payment-card__circle"></div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <!-- END PAYMENT CARD 2 -->
+
+                                        <!-- ADD NEW PAYMENT CARD -->
+                                        <div class="col-4">
+                                            <a href="./add-new-card.html" class="payment-newcard hover-layup">
+                                                <img src="./assets/icons/plus.svg" alt="Add new card icon" class="icon payment-newcard__icon">
+                                                <p class="payment-newcard__text">Add new card</p>
+                                            </a>
+                                        </div>
+                                        <!-- END ADD NEW PAYMENT CARD -->
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <h2 class="cart-info__heading">Account info</h2>
+                                    <p class="cart-info__desc profile__desc">Addresses, contact information and password</p>
+
+                                    <div class="row gy-2 gx-2 gy-md-2 row-cols-2 row-cols-lg-1">
+                                        <!-- Account info 1 -->
+                                        <div class="col">
+                                            <a href="./personal-info.html" class="hover-layup--lite">
+                                                <article class="account-info">
+                                                    <div class="account-info__icon">
+                                                        <img src="./assets/icons/message.svg" alt="" class="icon">
+                                                    </div>
+                                                    <div>
+                                                        <h3 class="account-info__title">Email Address</h3>
+                                                        <p class="account-info__desc">huynhphuongnhi@gmail.com</p>
+                                                    </div>
+                                                </article>
+                                            </a>
+                                        </div>
+
+                                        <!-- Account info 2 -->
+                                        <div class="col">
+                                            <a href="./personal-info.html" class="hover-layup--lite">
+                                                <article class="account-info">
+                                                    <div class="account-info__icon">
+                                                        <img src="./assets/icons/calling.svg" alt="" class="icon">
+                                                    </div>
+                                                    <div>
+                                                        <h3 class="account-info__title">Phone number</h3>
+                                                        <p class="account-info__desc">+84 862 163 122</p>
+                                                    </div>
+                                                </article>
+                                            </a>
+                                        </div>
+
+                                        <!-- Account info 3 -->
+                                        <div class="col">
+                                            <a href="./personal-info.html" class="hover-layup--lite">
+                                                <article class="account-info">
+                                                    <div class="account-info__icon">
+                                                        <img src="./assets/icons/location.svg" alt="" class="icon">
+                                                    </div>
+                                                    <div>
+                                                        <h3 class="account-info__title">Add an address</h3>
+                                                        <p class="account-info__desc">
+                                                            Bangladesh Embassy, Washington, DC 20008
+                                                        </p>
+                                                    </div>
+                                                </article>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="col-4 col-md-6">
-                                        <div class="cart-info__row">
-                                            <span>Subtotal:</span>
-                                            <span>$191.65</span>
-                                        </div>
-                                        <div class="cart-info__row">
-                                            <span>Shipping:</span>
-                                            <span>$10.00</span>
-                                        </div>
+                                </div>
 
-                                        <div class="cart-info__separate"></div>
+                                <div class="col-12">
+                                    <h2 class="cart-info__heading">Lists</h2>
+                                    <p class="cart-info__desc profile__desc">2 items - Primary</p>
 
-                                        <div class="cart-info__row cart-info__row--bold">
-                                            <span>Total:</span>
-                                            <span>$201.65</span>
+                                    <article class="favourite-item">
+                                        <img src="./assets/img/product/item-1.png" alt="" class="favourite-item__thumb">
+                                        <div>
+                                            <h3 class="favourite-item__title">
+                                                Coffee Beans - Espresso Arabica and Robusta Beans
+                                            </h3>
+                                            <div class="favourite-item__content">
+                                                <span class="favourite-item__price">$47.00</span>
+                                                <button class="btn btn--primary btn--rounded">Add to cart</button>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </article>
+
+                                    <div class="separate" style="--margin: 20px"></div>
+
+                                    <article class="favourite-item">
+                                        <img src="./assets/img/product/item-2.png" alt="" class="favourite-item__thumb">
+                                        <div>
+                                            <h3 class="favourite-item__title">
+                                                Lavazza Coffee Blends - Try the Italian Espresso
+                                            </h3>
+                                            <div class="favourite-item__content">
+                                                <span class="favourite-item__price">$53.00</span>
+                                                <button class="btn btn--primary btn--rounded">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </article>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- CỘT 2 -->
-                    <div class="col-4 col-xl-12">
-                        <div class="cart-info">
-                            <div class="cart-info__row">
-                                <span>Subtotal (items)</span>
-                                <span>3</span>
-                            </div>
-                            <div class="cart-info__row">
-                                <span>Price (Total)</span>
-                                <span>$191.65</span>
-                            </div>
-                            <div class="cart-info__row">
-                                <span>Shipping</span>
-                                <span>$10.00</span>
-                            </div>
-
-                            <div class="cart-info__separate"></div>
-
-                            <div class="cart-info__row cart-info__row--bold">
-                                <span>Estimated Total</span>
-                                <span>$201.65</span>
-                            </div>
-
-                            <a href="./shipping.html" class="btn btn--primary btn--rounded cart-info__btn">Continue to checkout</a>
-                        </div>
-
-                        <div class="cart-info hover-layup">
-                            <a href="#!">
-                                <article class="gift-item">
-                                    <div class="gift-item__icon-wrap">
-                                        <img src="./assets/icons/gift.svg" alt="" class="gift-item__icon">
-                                    </div>
-
-                                    <div class="gift-item__content">
-                                        <h3 class="gift-item__title">Send this order as a gift.</h3>
-                                        <p class="gift-item__desc">Available items will be shipped to your gift recipient.</p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    </div>
                 </div>
-            </div>
-
-
+             </div>
 
         </div>
     </main>

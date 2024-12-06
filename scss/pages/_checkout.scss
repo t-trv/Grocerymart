@@ -35,6 +35,13 @@
         margin-top: 30px;
     }
 
+    &__back-arrow {
+        width: 50px;
+        padding-right: 20px;
+        position: relative;
+        top: 4px;
+    }
+
     &__heading {
         display: flex;
         align-items: center;
@@ -486,14 +493,11 @@
     }
 
     &__content {
-        display: flex;
         flex: 1;
-        align-items: center;
-        justify-content: space-between;
 
         @include abstracts.screen(sm) {
+            display: flex;
             flex-direction: column;
-            gap: 20px;
             align-items: flex-start;
         }
     }
