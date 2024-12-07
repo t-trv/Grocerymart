@@ -1559,7 +1559,7 @@ b, strong {
 .top-bar {
   position: relative;
   z-index: 1;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 @media (max-width: 767.98px) {
   .top-bar {
@@ -1767,6 +1767,13 @@ b, strong {
   font-weight: 500;
   line-height: 146.667%;
 }
+.top-act__user {
+  position: relative;
+}
+.top-act__user:hover .act-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
 .top-act__avatar {
   display: block;
   width: 50px;
@@ -1780,6 +1787,13 @@ b, strong {
     width: 40px;
     height: 40px;
   }
+}
+.top-act__dropdown {
+  right: -15px !important;
+  width: min(250px, 100vw) !important;
+}
+.top-act__dropdown-arrow {
+  right: 14px !important;
 }
 
 .nav-btn {
@@ -1915,6 +1929,38 @@ b, strong {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 146.667%;
+}
+
+.user-menu__top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.user-menu__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.user-menu__name {
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.user-menu__list {
+  margin-top: 32px;
+}
+.user-menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 14px 0;
+}
+.user-menu__separate {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--separate-color);
 }
 
 .footer {
@@ -2328,7 +2374,7 @@ b, strong {
 .cate-item {
   display: flex;
   gap: 20px;
-  padding: 20px 26px;
+  padding: 20px;
   border-radius: 16px;
   height: 100%;
   background: var(--cate-item-bg);
@@ -2473,6 +2519,7 @@ b, strong {
 
 .product-card {
   height: 100%;
+  width: 100%;
   padding: 16px;
   border-radius: 20px;
   background: var(--product-card-bg);
