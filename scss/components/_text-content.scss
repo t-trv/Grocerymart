@@ -50,6 +50,7 @@
     a {
         color: #0071dc;
         text-decoration: underline;
+        cursor: pointer;
     }
 
     blockquote {
@@ -67,5 +68,9 @@
         height: 1.5px;
         background: #bebebe;
         margin: 50px 0;
+    }
+
+    strong {
+        font-weight: 500;
     }
 }

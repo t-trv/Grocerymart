@@ -3139,6 +3139,7 @@ b, strong {
 .text-content a {
   color: #0071dc;
   text-decoration: underline;
+  cursor: pointer;
 }
 .text-content blockquote {
   background: rgba(119, 218, 230, 0.1);
@@ -3153,6 +3154,9 @@ b, strong {
   height: 1.5px;
   background: #bebebe;
   margin: 50px 0;
+}
+.text-content strong {
+  font-weight: 500;
 }
 
 .banner {
